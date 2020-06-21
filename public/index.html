@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="商城,电商,手机" />
+		<meta name="Description" content="买手机啦买手机啦买手机啦买手机啦" />
+		<title>小U商城-首页</title>
+		<link rel="icon" href="./images/titleIcon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="./css/public.css" />
+		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	</head>
+	<body>
+		<!-- 顶部 -->
+		<div class="topbar">
+			<div class="inner clearfix">
+				<ul class="fl">
+					<li>
+						<a href="javascript:;">网站导航
+							<em class="down"></em>
+						</a>
+						<div class="subcon"></div>
+					</li>
+					<li>
+						<a href="javascript:;">商家入驻
+							<em class="down"></em>
+						</a>
+						<div class="subcon"></div>
+					</li>
+					<li>
+						<a href="javascript:;">客户服务
+							<em class="down"></em>
+						</a>
+						<div class="subcon"></div>
+					</li>
+					<li>
+						<a href="javascript:;"><i class="arricon"></i>北京
+							<b class="arr"></b>
+						</a>
+						<div class="subcon"></div>
+					</li>
+				</ul>
+				<ul class="fr">
+					<li id="login"><a href="./login.html">请登录</a></li>
+					<li class="cole56" id="register"><a href="./register.html">注册有礼</a></li>
+					<li><a href="javascript:;">我的订单
+							<em class="down"></em>
+						</a></li>
+					<li><a href="javascript:;">我的易购<em class="down"></em></a></li>
+					<li><a href="javascript:;">小U会员<em class="down"></em></a></li>
+					<li class="cole56"><a href="./cart.html"><i class="carticon"></i>购物车<b>0</b><em class="down"></em></a></li>
+					<li><a href="javascript:;">易付宝</a></li>
+					<li><a href="javascript:;">企业采购</a></li>
+					<li><a href="javascript:;">手机小U<em class="down"></em></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 头部 -->
+		<div class="navheader inner clearfix">
+			<a class="logo fl" href="./index.html"><img src="./images/logo.jpg " alt="logo"></a>
+			<form action="./list.html" class="fl">
+				<div class="search clearfix">
+					<input type="text" name="searchText" value="" id="search" placeholder="跨店每300减30" />
+					<input type="button" name="" value="搜索" id="sech"/>
+				</div>
+				<div class="keywordnew clearfix" id="SeachList">
+					<!-- ajax 渲染重构 -->
+					<!-- <input type="hidden" name=""  value="跨店每300减30" />
+					<a href="javascript:;">手机</a>
+					<a href="javascript:;">电动牙刷</a>
+					<a href="javascript:;">电视</a>
+					<a class="colf3" href="javascript:;">海尔空调</a>
+					<a href="javascript:;">洗衣机</a>
+					<a href="javascript:;">茅台</a>
+					<a href="javascript:;">热水器</a>
+					<a href="javascript:;">ipad</a>
+					<a class="last" href="javascript:;">微波炉</a> -->
+				</div>
+			</form>
+		</div>
+		<!-- 导航 -->
+		<div class="navbar inner clearfix">
+			<div class="menu fl">
+				<h2><i class="clicon"></i>全部商品分类</h2>
+				<ul id="ulSort">
+					 <li>
+						<a href="javascript:;">手机</a>
+						<a href="javascript:;">运营商</a>
+						<a href="javascript:;">智能数码</a>
+					</li>
+					<li>
+						<a href="javascript:;">空调</a>
+						<a href="javascript:;">电视</a>
+						<a href="javascript:;">冰箱</a>
+						<a href="javascript:;">洗衣机</a>
+					</li>
+					<li>
+						<a href="javascript:;">厨卫大电</a>
+						<a href="javascript:;">生活家电</a>
+						<a href="javascript:;">厨具</a>
+					</li>
+					<li>
+						<a href="javascript:;">电脑办公</a>
+						<a href="javascript:;">相机</a>
+						<a href="javascript:;">DIY</a>
+					</li>
+					<li>
+						<a href="javascript:;">家居</a>
+						<a href="javascript:;">家具</a>
+						<a href="javascript:;">家装</a>
+						<a href="javascript:;">家纺</a>
+					</li>
+					<li>
+						<a href="javascript:;">食品</a>
+						<a href="javascript:;">酒水</a>
+						<a href="javascript:;">生鲜</a>
+						<a href="javascript:;">特产</a>
+					</li>
+					<li>
+						<a href="javascript:;">美妆</a>
+						<a href="javascript:;">个护</a>
+						<a href="javascript:;">清洁</a>
+						<a href="javascript:;">宠物</a>
+					</li>
+					<li>
+						<a href="javascript:;">母婴</a>
+						<a href="javascript:;">玩具</a>
+						<a href="javascript:;">车床</a>
+						<a href="javascript:;">童装</a>
+					</li>
+					<li>
+						<a href="javascript:;">运动</a>
+						<a href="javascript:;">户外</a>
+						<a href="javascript:;">足球</a>
+						<a href="javascript:;">跑步机</a>
+					</li>
+					<li>
+						<a href="javascript:;">男装</a>
+						<a href="javascript:;">女装</a>
+						<a href="javascript:;">内衣</a>
+						<a href="javascript:;">鞋靴</a>
+					</li>
+					<li>
+						<a href="javascript:;">箱包</a>
+						<a href="javascript:;">钟表</a>
+						<a href="javascript:;">珠宝</a>
+						<a href="javascript:;">艺术</a>
+					</li>
+					<li>
+						<a href="javascript:;">汽车</a>
+						<a href="javascript:;">汽摩</a>
+						<a href="javascript:;">二手车</a>
+						<a href="javascript:;">车品</a>
+					</li>
+					<li>
+						<a href="javascript:;">图书</a>
+						<a href="javascript:;">艺术</a>
+						<a href="javascript:;">原版</a>
+						<a href="javascript:;">文学</a>
+					</li>
+					<li>
+						<a href="javascript:;">医药健康</a>
+						<a href="javascript:;">计生情趣</a>
+					</li>
+					<li>
+						<a href="javascript:;">理财</a>
+						<a href="javascript:;">分期</a>
+						<a href="javascript:;">保险</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="nav fl">
+				<li><a href="javascript:;">限时抢购</a></li>
+				<li><a href="javascript:;">红孩子</a></li>
+				<li><a href="javascript:;">小U超市</a></li>
+				<li><a href="javascript:;">电器城</a></li>
+				<li><a href="javascript:;">生活家电</a></li>
+				<li><a href="javascript:;">时尚服饰</a></li>
+				<li><a href="javascript:;">金融</a></li>
+			</ul>
+		</div>
+		<!-- banner图 -->
+		<div class="banner">
+			<ul id="banUl">
+				<!-- <li><a href="javascript:;"><img src="./images/banner.jpg" ></a></li>
+				<li><a href="javascript:;"><img src="./images/banner.jpg" ></a></li>
+				<li><a href="javascript:;"><img src="./images/banner.jpg" ></a></li> -->
+			</ul>
+			<!-- <img src="images/banner01.png" alt="banner"> -->
+			<!-- <div class="txt">
+				<p class="txt1">Redmi K30 <span>4G</span></p>
+				<p class="txt2">新年钜惠 购机赠送耳机</p>
+				<p class="txt3">120Hz流速屏 | 索尼6400万前后六摄</p>
+				<p class="txt4"><i>￥</i>1599<b>起</b></p>
+				<input type="submit" name="" id="" value="立即购买" />
+			</div> -->
+			<div class="btn btn-left"></div>
+			<div class="btn btn-right"></div>
+			<div class="foucs-list">
+				<!-- <span class="active"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span> -->
+			</div>
+		</div>
+		<!-- 主体内容部分 -->
+		<div class="main">
+			<div class="inner">
+				<!-- 限时抢购部分 -->
+				<div class="xians clearfix">
+					<div class="xians-left fl">
+						<div class="xl-top">
+							距离下场
+							<span class="sp03">03</span>
+							<span>14</span>
+							<span>16</span>
+							<b>16:00场-正在疯抢</b>
+							<i>20:00场-即将开始</i>
+						</div>
+						<ul class="clearfix">
+							<li>
+								<img src="images/xian-02.jpg">
+								<div>
+									<p class="txt">壹宝泡脚足浴包艾草艾叶藏</p>
+									<p class="txt2"><i>￥</i>7.5 <del><i>￥</i>17.8</del></p>
+									<b><i></i></b>
+									<span>已抢36%</span>
+								</div>
+							</li>
+							<li>
+								<img src="images/xian-03.jpg">
+								<div>
+									<p class="txt">金磨坊 劲道牛肉丸 90g</p>
+									<p class="txt2"><i>￥</i>3.9 <del><i>￥</i>14.5</del></p>
+									<b><i></i></b>
+									<span>已抢36%</span>
+								</div>
+							</li>
+							<li>
+								<img src="images/xian-04.jpg">
+								<div>
+									<p class="txt">山羊奶身体乳保湿滋润香体</p>
+									<p class="txt2"><i>￥</i>9.9 <del><i>￥</i>29.9 </del></p>
+									<b><i></i></b>
+									<span>已抢36%</span>
+								</div>
+							</li>
+							<li>
+								<img src="images/xian-05.jpg">
+								<div>
+									<p class="txt">优勤毛巾架免打孔卫生间</p>
+									<p class="txt2"><i>￥</i>14.9 <del><i>￥</i>39.6</del></p>
+									<b><i></i></b>
+									<span>已抢36%</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="xians-right fl">
+						<div class="xr-top">
+							<h3>大聚惠</h3>
+							<b class="gd">更多<i></i></b>
+						</div>
+						<img src="images/dh-01.jpg">
+						<ul class="clearfix">
+							<li><img src="images/dh-02.jpg">
+								<p>满400减280</p>
+							</li>
+							<li><img src="images/dh-03.jpg">
+								<p>官网价直降</p>
+							</li>
+							<li><img src="images/dh-03.jpg">
+								<p>劲爆10.9元起</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 排行榜 -->
+				<div class="rank clearfix">
+					<div class="rank-left fl">
+						<div class="ran-top">
+							<i></i>
+							<h2>排行榜</h2>
+							<b class="gd">更多<i></i></b>
+						</div>
+						<div class="ran-nav">
+							<ul class="clearfix" id="navList">
+								<!-- <li class="active"><a href="javascript:;">精选</a></li>
+								<li><a href="javascript:;">休闲食品</a></li>
+								<li><a href="javascript:;">纸品清洁</a></li>
+								<li><a href="javascript:;">生鲜果蔬</a></li> -->
+							</ul>
+						</div>
+						<div class="ran-list">
+							<div id="ulLis">
+							<!-- <ul>
+								<li>
+									<a href="javascript:;">
+										<img src="images/gz.png">
+										<div>
+											<h3>恰恰香瓜子308g袋装坚果炒货恰恰出品</h3>
+											<span>￥9.90</span>
+											<i>休闲食品销量NO1</i>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="images/gz.png">
+										<div>
+											<h3>恰恰香瓜子308g袋装坚果炒货恰恰出品</h3>
+											<span>￥9.90</span>
+											<i>休闲食品销量NO1</i>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="images/gz.png">
+										<div>
+											<h3>恰恰香瓜子308g袋装坚果炒货恰恰出品</h3>
+											<span>￥9.90</span>
+											<i>休闲食品销量NO1</i>
+										</div>
+									</a>
+								</li>
+							</ul> -->
+							</div>
+							<div class="btn-list">
+								<span class="active"></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="rank-right fl">
+						<div class="ran-top">
+							<i></i>
+							<h2>人气好货</h2>
+							<b class="gd">更多<i></i></b>
+						</div>
+						<div class="img-list">
+							<ul class="clearfix" id="goodsUl">
+								<!-- <li>
+									<a href="javascript:;">
+										<img src="./images/kz.png">
+										<p>鸭鸭</p>
+										<i>今日特价4.5折起</i>
+									</a>
+
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="./images/kz.png">
+										<p>鸭鸭</p>
+										<i>今日特价4.5折起</i>
+									</a>
+
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="./images/kz.png">
+										<p>鸭鸭</p>
+										<i>今日特价4.5折起</i>
+									</a>
+
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="./images/kz.png">
+										<p>鸭鸭</p>
+										<i>今日特价4.5折起</i>
+									</a>
+
+								</li>
+								<li class="no-bord">
+									<a href="javascript:;">
+										<img src="./images/kz.png">
+										<p>鸭鸭</p>
+										<i>今日特价4.5折起</i>
+									</a>
+
+								</li>
+								<li class="no-bord">
+									<a href="javascript:;">
+										<img src="./images/kz.png">
+										<p>鸭鸭</p>
+										<i>今日特价4.5折起</i>
+									</a>
+
+								</li>
+								<li class="no-bord">
+									<a href="javascript:;">
+										<img src="./images/kz.png">
+										<p>鸭鸭</p>
+										<i>今日特价4.5折起</i>
+									</a>
+
+								</li>
+								<li class="no-bord">
+									<a href="javascript:;">
+										<img src="./images/kz.png">
+										<p>鸭鸭</p>
+										<i>今日特价4.5折起</i>
+									</a>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- 广告 -->
+				<div class="g-banner clearfix">
+					<ul class="clearfix">
+						<li><img src="images/ba-01.png" ></li>
+						<li><img src="images/ba-02.png" ></li>
+						<li><img src="images/ba-03.png" ></li>
+					</ul>
+				</div>
+
+				<!-- 发现好货 -->
+				<div class="merc clearfix">
+					<div class="merimg fl">
+						<img src="./images/discovery.png" >
+						<div class="txt">
+							<img src="images/find.png" >
+							<span>探索新生活</span><i></i>
+						</div>
+					</div>
+					<div class="maerc-right fl">
+						<ul>
+							<li class="li-01">
+								<a href="javascript:;">
+									<p>黑街多功能变形轮滑鞋</p>
+									<img src="images/hh-01.png" >
+								</a>
+							</li>
+							<li class="li-02">
+								<a href="javascript:;">
+									<img src="images/hh-02.png" >
+									<p>闪迪固态内存盘</p>
+								</a>
+							</li>
+							<li class="li-01">
+								<a href="javascript:;">
+									<p>黑街多功能变形轮滑鞋</p>
+									<img src="images/hh-01.png" >
+								</a>
+							</li>
+							<li class="li-02">
+								<a href="javascript:;">
+									<img src="images/hh-02.png" >
+									<p>闪迪固态内存盘</p>
+								</a>
+							</li>
+							<li class="li-01">
+								<a href="javascript:;">
+									<p>黑街多功能变形轮滑鞋</p>
+									<img src="images/hh-01.png" >
+								</a>
+							</li>
+						</ul>
+						<div class="liu-bott">
+							<span><i></i></span>
+						</div>
+					</div>
+				</div>
+
+				<!-- 服饰搭配 -->
+				<div class="fs-ul clearfix" id="fsLs">
+					<!-- 
+						<div class="ul-list">
+							<div class="u-top clearfix" id="top1">
+								<div class="bt fl">
+									<i></i>
+									<h3>服装配饰</h3>
+									<img src="./images/fs-e01.png" >
+								</div>
+									<ul class="nav-u fr">
+										<li><a href="JavaScript:;">骆驼鞋靴</a></li>
+										<li><a href="JavaScript:;">珠宝年货节</a></li>
+										<li><a href="JavaScript:;">洁丽雅</a></li>
+										<li><a href="JavaScript:;">海澜之家</a></li>
+									</ul>
+							</div>
+							<div class="u-bott clearfix">
+								<div class="img-lf fl">
+									<img src="images/fs-01.png" >
+								</div>
+								<ul class="u-img fl" id="one1">
+									<li>
+										<a href="javascript:;">
+											<i>森马</i>
+											<p>2件3折</p>
+											<img src="images/fs-02.png" >
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i>森马</i>
+											<p>2件3折</p>
+											<img src="images/fs-02.png" >
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i>森马</i>
+											<p>2件3折</p>
+											<img src="images/fs-02.png" >
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i>森马</i>
+											<p>2件3折</p>
+											<img src="images/fs-02.png" >
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					
+					<div class="ul-list">
+						<div class="u-top clearfix">
+							<div class="bt fl">
+								<i></i>
+								<h3>户外运动</h3>
+								<img src="./images/fs-e01.png" >
+							</div>
+								<ul class="nav-u fr">
+									<li><a href="JavaScript:;">骆驼鞋靴</a></li>
+									<li><a href="JavaScript:;">珠宝年货节</a></li>
+									<li><a href="JavaScript:;">洁丽雅</a></li>
+									<li><a href="JavaScript:;">海澜之家</a></li>
+								</ul>
+						</div>
+						<div class="u-bott clearfix">
+							<div class="img-lf fl">
+								<img src="images/fs-01.png" >
+							</div>
+							<ul class="u-img fl">
+								<li>
+									<a href="javascript:;">
+										<i>森马</i>
+										<p>2件3折</p>
+										<img src="images/fs-02.png" >
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i>森马</i>
+										<p>2件3折</p>
+										<img src="images/fs-02.png" >
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i>森马</i>
+										<p>2件3折</p>
+										<img src="images/fs-02.png" >
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i>森马</i>
+										<p>2件3折</p>
+										<img src="images/fs-02.png" >
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="ul-list">
+						<div class="u-top clearfix">
+							<div class="bt fl">
+								<i></i>
+								<h3>金融</h3>
+								<img src="./images/fs-e01.png" >
+							</div>
+								<ul class="nav-u fr">
+									<li><a href="JavaScript:;">骆驼鞋靴</a></li>
+									<li><a href="JavaScript:;">珠宝年货节</a></li>
+									<li><a href="JavaScript:;">洁丽雅</a></li>
+									<li><a href="JavaScript:;">海澜之家</a></li>
+								</ul>
+						</div>
+						<div class="u-bott clearfix">
+							<div class="img-lf fl">
+								<img src="images/fs-01.png" >
+							</div>
+							<ul class="u-img fl">
+								<li>
+									<a href="javascript:;">
+										<i>森马</i>
+										<p>2件3折</p>
+										<img src="images/fs-02.png" >
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i>森马</i>
+										<p>2件3折</p>
+										<img src="images/fs-02.png" >
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i>森马</i>
+										<p>2件3折</p>
+										<img src="images/fs-02.png" >
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i>森马</i>
+										<p>2件3折</p>
+										<img src="images/fs-02.png" >
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="ul-list">
+						<div class="u-top clearfix">
+							<div class="bt fl">
+								<i></i>
+								<h3>阅读</h3>
+								<img src="./images/fs-e01.png" >
+							</div>
+								<ul class="nav-u fr">
+									<li><a href="JavaScript:;">骆驼鞋靴</a></li>
+									<li><a href="JavaScript:;">珠宝年货节</a></li>
+									<li><a href="JavaScript:;">洁丽雅</a></li>
+									<li><a href="JavaScript:;">海澜之家</a></li>
+								</ul>
+						</div>
+						<div class="u-bott clearfix">
+							<div class="img-lf fl">
+								<img src="images/fs-01.png" >
+							</div>
+							<ul class="u-img fl">
+								<li>
+									<a href="javascript:;">
+										<i>森马</i>
+										<p>2件3折</p>
+										<img src="images/fs-02.png" >
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i>森马</i>
+										<p>2件3折</p>
+										<img src="images/fs-02.png" >
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i>森马</i>
+										<p>2件3折</p>
+										<img src="images/fs-02.png" >
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<i>森马</i>
+										<p>2件3折</p>
+										<img src="images/fs-02.png" >
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div> -->
+				</div>
+				
+				<!-- 广告 -->
+				<div class="g-banner clearfix">
+					<ul class="clearfix">
+						<li><img src="images/ba-01.png" ></li>
+						<li><img src="images/ba-02.png" ></li>
+						<li><img src="images/ba-03.png" ></li>
+					</ul>
+				</div>
+
+				<!-- 猜你喜欢 -->
+				<div class="ul-love clearfix">
+					<div class="lo-top">
+						<i></i>
+						<h3>猜你喜欢</h3>
+					</div>
+					<ul class="li-img clearfix" id="guessLove">
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="images/lo-01.png" >
+							<div class="txt">
+								<p class="txt1">[三只松鼠萌心团子138g]糖果棉花糖干吃汤圆糕点草莓味麻蓉糯米糍</p>
+								<span>￥25.90</span>
+								<i>找相似</i>
+								<p class="txt2"><i class="djh">大钜惠</i><i class="lj">领卷78-5</i></p>
+							</div>
+							</a>
+							
+						</li>
+					</ul>
+				</div>
+			
+				<!-- end -->
+				<div class="end">
+					<p></p><i>END</i>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 绝对定位 -->
+		<div class="lef-navbar">
+			<ul>
+				<li><a href="javascript:;">特色优选</a></li>
+				<li><a href="javascript:;">发现好货</a></li>
+				<li><a href="javascript:;">服饰运动</a></li>
+				<li><a href="javascript:;">金融阅读</a></li>
+				<li class="active"><a href="javascript:;">猜你喜欢</a></li>
+				<li class="db"><a href="javascript:;">不 顶部</a></li>
+			</ul>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="footer">
+			<div class="inner">
+				<div class="friend clearfix">
+					<dl>
+						<dt>购物指南</dt>
+						<dd><a href="javascript:;">购物流程</a></dd>
+						<dd><a href="javascript:;">支付方式</a></dd>
+						<dd><a href="javascript:;">配送方式</a></dd>
+					</dl>
+					<dl>
+						<dt>售后服务</dt>
+						<dd><a href="javascript:;">售后政策</a></dd>
+						<dd><a href="javascript:;">价格保护</a></dd>
+						<dd><a href="javascript:;">退款说明</a></dd>
+						<dd><a href="javascript:;">返修/退换货</a></dd>
+						<dd><a href="javascript:;">取消订单</a></dd>
+					</dl>
+					<dl>
+						<dt>配送方式</dt>
+						<dd><a href="javascript:;">上门自提</a></dd>
+						<dd><a href="javascript:;">211限时达</a></dd>
+						<dd><a href="javascript:;">配送服务查询</a></dd>
+						<dd><a href="javascript:;">配送费收取标准</a></dd>
+						<dd><a href="javascript:;">海外配送</a></dd>
+					</dl>
+					<dl>
+						<dt>支付方式</dt>
+						<dd><a href="javascript:;">网上支付</a></dd>
+						<dd><a href="javascript:;">支付宝支付</a></dd>
+						<dd><a href="javascript:;">邮件汇款</a></dd>
+					</dl>
+					<dl>
+						<dt>用户帮助</dt>
+						<dd><a href="javascript:;">免费注册</a></dd>
+						<dd><a href="javascript:;">找回密码</a></dd>
+						<dd><a href="javascript:;">常见问题</a></dd>
+						<dd><a href="javascript:;">优惠卷使用</a></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="inner">
+					<p>Copyright&copy;2010-2016小U商城 版权所有 保留一切权力</p>
+					<p><a href="javascript:;">京ICP备10218183号</a><a href="javascript:;">京ICP证161188号</a><a href="javascript:;">京公安网安备110110802020593号</a>出版物经营许可证新出发京批字第直130052号</p>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+		<script src="./utils/getSearch.js"></script>
+		<script src="./utils/request.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

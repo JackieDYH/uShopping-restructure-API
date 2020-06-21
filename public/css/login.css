@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* 内容 */
+.main{
+	position: relative;
+}
+.main .img-banner{
+	height: 450px;
+	overflow: hidden;
+}
+.main .img-banner ul{
+}
+
+.main .box form>div>span{
+	display: none;
+}
+
+.main .box{
+	position: absolute;
+	top: 0;
+	right: 8%;
+	
+	margin-top: 40px;
+	width: 350px;
+	height: 377px;
+	background-color: #ffffff;
+	border-top: 3px solid #f76915;
+	border-radius: 4px;
+}
+
+.main .box input{
+	font: 14px "宋体";
+	color: #a0a0a0;
+	width: 243px;
+	height: 34px;
+	padding: 0 10px;
+	border: 1px solid #d8d8d8;
+	vertical-align: middle;
+}
+.main .box input.yzm{
+	width: 192px;
+}
+.main .box .yzm img{
+	/* padding: 0 6px 0 17px; */
+	width: 85px;
+}
+
+/* .main .box span{
+	display: inline-block;
+	font: 12px "宋体";
+	color: #f15d03;
+	padding: 10px 0 22px 0;
+} */
+
+.main .box form .pwd{
+	padding: 14px 0;
+}
+
+.main .box h2{
+	font: 18px/60px "微软雅黑";
+	text-align: left;
+	padding-left: 25px;
+}
+
+.main .box form{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.main .box form i{
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	border: 1px solid #d8d8d8;
+	background: #f6f6f6 url(../images/icon-dl.png) no-repeat -55px 10px;
+	vertical-align: middle;
+}
+
+.main .box form .pwd i{
+	background-position: -55px -55px;
+}
+
+.main .box form .mail input,
+.main .box form .pwd input{
+	border-left: 0;
+}
+
+.main .box form .em:hover input{
+	border-color: #f15d03;
+}
+.main .box form .em:hover i{
+	background-position: 9px 10px;
+	border-color: #f15d03;
+}
+.main .box form .em:hover .pw{
+	background-position: 9px -55px;
+	border-color: #f15d03;
+}
+
+
+.main .box form>input{
+	width: 286px;
+	height: 44px;
+	font: 20px/44px "微软雅黑";
+	color: #f9ffff;
+	margin-top: 24px;
+	background-color: #f26b11;
+	border-radius: 5px;
+}
+
+/* .main .box form>p{
+	padding-left: 155px;
+}
+.main .box form>p,
+.main .box form>p a{
+	font: 12px "宋体";
+	color: #323232;
+	padding-top: 35px;
+}
+
+.main .box form>p a{
+	color: #e15d00;
+}
+ */
+.main .box form .log{
+	padding-top: 13px;
+}
+
+.main .box form .aut>label>input{
+	width: 14px;
+	height: 14px;
+}
+.main .box form .aut b,
+.main .box form .aut1 a{
+	font: 12px "宋体";
+	color: #656565;
+}
+
+
+.main .box .bott{
+	padding-top: 50px;
+} 
+.main .box .bott ul li{
+	float: left;
+	font: 12px "宋体";
+	margin: 0 5px;
+} 
+.main .box .bott ul>li em{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #1ba7eb;
+	margin-right: 5px;
+}
+
+.main .box .bott ul>li .wb{
+	background-color: #e73334;
+}
+.main .box .bott ul>li .wx{
+	background-color: #26d044;
+}
+
+
+.main .box .bott>a{
+	font: 14px "宋体";
+	color: #e46e04;
+}
+
+.main .box .xian{
+	position: absolute;
+	top: 320px;
+	left: 0;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 2px solid #eeeeee;
+}
+
+
+/* 尾部调整 */
+.footer {
+    padding-top: 40px;
+}

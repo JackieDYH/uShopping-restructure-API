@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小U商城-注册</title>
+		<link rel="icon" href="./images/titleIcon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="./css/public-Registerlogin.css" />
+		<link rel="stylesheet" type="text/css" href="./css/register.css" />
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="header inner">
+			<a href="./index.html"><img src="images/logo.jpg"></a>
+			<h1>欢迎注册</h1>
+		</div>
+		<!-- 内容 -->
+		<div class="main">
+			<div class="inner">
+				<div class="box">
+					<h2>注册账号</h2>
+					<form autocomplete="off">
+						<div class="mail">
+							<div class="em">
+								<i></i><input type="text" name="userMail" id="userMail" placeholder="请输入邮箱/用户名" required autofocus />
+							</div>
+							<span>请输入邮箱/用户名</span>
+						</div>
+						<div class="pwd">
+							<div class="em">
+								<i class="pw"></i><input type="password" name="userPwd" id = "userPwd" placeholder="请输入密码" required />
+							</div>
+							<span>请输入密码/密码格式为6-20位字母数组组合</span>
+						</div>
+						<div class="yzm">
+							<div class="em">
+								<input class="yzm" type="text" name="yzm" id="yzm" placeholder="请输入验证码" required /><img id="code" src="/users/getCode">
+							</div>
+							<span>请输入验证码</span>
+						</div>
+						<input type="submit" value="注册" id="sub"/>
+						<p>已有账号 <a href="./login.html">去登录</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="footer inner">
+			<p>Copyright&copy;2010-2016小U商城 版权所有 保留一切权力</p>
+			<p><a href="javascript:;">京ICP备10218183号</a><a href="javascript:;">京ICP证161188号</a><a href="javascript:;">京公安网安备110110802020593号</a>出版物经营许可证新出发京批字第直130052号</p>
+		</div>
+		<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+		<script src="./utils/request.js"></script>
+		<script src="./utils/md5.js"></script>
+		<script src="./js/register.js"></script>
+	</body>
+</html>

@@ -1,0 +1,529 @@
+@charset "utf-8";
+
+/* 隐藏nav */
+.navbar .menu ul {
+	display: none;
+}
+
+.navbar .menu:hover ul {
+	display: block;
+}
+
+/* 导航 */
+.navbar {
+	border-bottom: 2px solid #ed6d12;
+}
+
+.navbar .inner {
+	position: relative;
+}
+
+/* 面包蟹导航 */
+.bread_header {
+	padding: 14px 0 10px 0;
+}
+
+.bread_header .breadCrumb ul li {
+	float: left;
+}
+
+.bread_header .breadCrumb ul li a {
+	font: 12px/33px "宋体";
+	color: #696969;
+}
+
+.bread_header .breadCrumb ul li+li::before {
+	content: ">";
+	padding: 0 6px 0 8px;
+	color: #696969;
+}
+
+/* 电视详情 */
+.bread_header .telev {
+	text-align: center;
+}
+
+.bread_header .telev .telev_left .dsj {
+	width: 420px;
+}
+
+.bread_header .telev .telev_left .imgfr {
+	margin-right: 24px;
+	margin-bottom: 8px;
+}
+
+.bread_header .telev .telev_left {
+	width: 440px;
+}
+
+.bread_header .telev .telev_left ul {
+	float: left;
+}
+
+.bread_header .telev .telev_left ul>li {
+	float: left;
+	width: 64px;
+	height: 64px;
+	border: 2px solid #f4f4f4;
+	margin: 0 4px;
+	cursor: pointer;
+}
+
+.bread_header .telev .telev_left ul>li>img {
+	width: 60px;
+}
+
+.bread_header .telev .telev_left ul>li .iconfont {
+	line-height: 64px;
+	color: #797979;
+}
+
+.bread_header .telev .telev_left .btnS .icosp {
+	width: 18px;
+	height: 64px;
+	line-height: 64px;
+	background-color: #f2f2f2;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.bread_header .telev .telev_left ul li:hover {
+	border: 2px solid #f06a11;
+}
+
+.bread_header .telev .telev_left ul .active {
+	border: 2px solid #f06a11;
+}
+
+/* 右侧详情 */
+.bread_header .telev .telev_right {
+	width: 750px;
+	text-align: left;
+}
+
+.bread_header .telev .telev_right .pro-info {}
+
+.bread_header .telev .telev_right .pro-info .pro-title {
+	width: 680px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-title h1 {
+	font: 16px/24px "微软雅黑";
+	color: #000000;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-title p,
+.bread_header .telev .telev_right .pro-info .pro-title p>a {
+	font: 14px/25px "微软雅黑";
+	color: #5e5e5e;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-title p>a {
+	text-decoration: underline;
+	color: #ef7546;
+	padding-left: 20px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-price {
+	height: 130px;
+	margin-top: 20px;
+	background-color: #fdf8f4;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-price .pricefl .align {
+	vertical-align: 13px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-price .pricefl>p {
+	padding: 5px 0;
+}
+
+/* span文字分散对齐 */
+.bread_header .telev .telev_right .pro-info .pro-price .pricefl>p>span {
+	display: inline-block;
+	width: 50px;
+	font: 12px "宋体";
+	color: #827d79;
+	padding: 0 20px;
+	text-align: justify;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-price .pricefl>p>span::after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-price .pricefl .pric-txt1 {
+	padding-top: 10px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-price .pricefl .pric-txt1 strong {
+	font: 23px "Arial";
+	color: #e36616;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-price .pricefl .pric-txt1 .not {
+	display: inline-block;
+	width: 60px;
+	height: 20px;
+	font: 12px/20px "宋体";
+	text-align: center;
+	color: #fff;
+	background-color: #ff6a0a;
+	margin-left: 20px;
+	vertical-align: 17px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-price .pricefl .pric-txt1 .san {
+	position: relative;
+	top: -10px;
+	left: 23px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 5px solid;
+	border-color: #ff6a0a transparent transparent transparent;
+	border-bottom: none;
+	transform: rotate(-45deg);
+}
+
+.bread_header .telev .telev_right .pro-info .pro-price .pricefl .pric-txt2>i {
+	font: 12px "Arial";
+	color: #eb722d;
+	border-bottom: 1px solid #eb722d;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-price .pricefl .pric-txt3>i {
+	font: 12px "Arial", "宋体";
+	color: #312c28;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-price .pricefr {
+	margin: 12px 32px 0 0;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-price>span {
+	color: #ec8250;
+}
+
+
+/* list */
+.bread_header .telev .telev_right .pro-info .dent {
+	font: 12px "宋体";
+	color: #808080;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-list {
+	padding-top: 25px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-list span {
+	padding-top: 8px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-list ul {
+	width: 560px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-list ul li {
+	float: left;
+	height: 26px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	border: 2px solid #ebebeb;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-list ul li a {
+	display: block;
+	font: 16px/26px "微软雅黑";
+	color: #b3b3b3;
+	padding: 0 10px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-list ul>li:hover {
+	border-color: #f36b13;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-list ul>li:hover a {
+	color: #f36b13;
+}
+
+/* 数量 */
+.bread_header .telev .telev_right .pro-info .pro-num {
+	padding-top: 30px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-num span {
+	padding-top: 8px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-num ul {
+	padding-left: 20px;
+	text-align: center;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-num ul li {
+	float: left;
+	font: 15px/28px "Arial";
+	cursor: pointer;
+	color: #cdcdcd;
+	border: 1px solid #cdcdcd;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-num ul li:nth-child(1),
+.bread_header .telev .telev_right .pro-info .pro-num ul li:nth-child(3) {
+	width: 28px;
+	height: 28px;
+
+}
+
+.bread_header .telev .telev_right .pro-info .pro-num ul li:nth-child(2) {
+	width: 43px;
+	height: 28px;
+	/* border-left: 0;
+	border-right: 0; */
+}
+
+.bread_header .telev .telev_right .pro-info .pro-num ul>li:hover {
+	border-color: #f36b13;
+	color: #f36b13;
+}
+
+/* 按钮 */
+.bread_header .telev .telev_right .pro-info .pro-btn {
+	padding: 30px 0 0 68px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-btn button {
+	margin-right: 17px;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-btn button,
+.bread_header .telev .telev_right .pro-info .pro-btn input {
+	font: 18px/44px "微软雅黑";
+	width: 184px;
+	height: 44px;
+	color: #f46c16;
+	border: 1px solid #f46c16;
+}
+
+.bread_header .telev .telev_right .pro-info .pro-btn button:hover,
+.bread_header .telev .telev_right .pro-info .pro-btn input:hover {
+	color: #fff;
+	font-weight: bold;
+	background-color: #f46c16;
+}
+
+
+
+/* 主体内容 */
+/* 左侧 */
+.main .cent_left {
+	width: 208px;
+	border-top: 2px solid #ff8c4e;
+	border-right: 1px solid #e3e3e3;
+	border-left: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.main .cent_left h2 {
+	font: bold 16px/45px "微软雅黑";
+	color: #eb6116;
+	padding-left: 18px;
+}
+
+.main .cent_left ul {
+	text-align: center;
+}
+
+
+.main .cent_left ul li {
+	padding: 5px 0;
+}
+
+.main .cent_left ul li a div {
+	text-align: left;
+	padding: 10px 0 0 18px;
+}
+
+.main .cent_left ul li a p {
+	font: 12px/20px "宋体";
+	color: #636363;
+}
+
+.main .cent_left ul li a span {
+	font: bold 14px/22px "Arial";
+	color: #ef6f24;
+}
+
+
+
+/* 右侧 */
+.main .cent_right {
+	width: 970px;
+	min-height: 300px;
+}
+
+.main .cent_right .cent_top {
+	border: 1px solid #e2e2e2;
+}
+
+.main .cent_right .cent_top {}
+
+.main .cent_right .cent_top .nav-cent ul {
+	/* width: 968px; */
+}
+
+.main .cent_right .cent_top .nav-cent ul li {
+	float: left;
+	height: 38px;
+}
+
+.main .cent_right .cent_top .nav-cent ul .option {
+	font: 14px/38px "宋体";
+	border-right: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+	/* border-top: 2px solid transparent; 用阴影实现 不占位 */
+}
+
+.main .cent_right .cent_top .nav-cent ul .option i {
+	color: #ff7733;
+}
+
+.main .cent_right .cent_top .nav-cent ul .option:hover {
+	border-bottom: 0;
+	/* border-top: 2px solid #fd8a3a; */
+	box-shadow: 0 -2px #fd8a3a;
+}
+
+.main .cent_right .cent_top .nav-cent ul .active {
+	border-bottom: 0;
+	/* border-top: 2px solid #fd8a3a; */
+	box-shadow: 0 -2px #fd8a3a;
+}
+
+.main .cent_right .cent_top .nav-cent ul .option:hover a {
+	font: 14px/38px "微软雅黑";
+	color: #ed6c04;
+}
+
+
+.main .cent_right .cent_top .nav-cent ul .seat {
+	width: 418px;
+	height: 38px;
+	border-bottom: 1px solid #e2e2e2;
+	/* border-top: 2px solid transparent; */
+}
+
+.main .cent_right .cent_top .nav-cent ul .nav-but {
+	/* float: right; */
+	font: bold 18px/38px "微软雅黑";
+	text-align: center;
+	width: 170px;
+	height: 38px;
+	background-color: #f26b11;
+}
+
+.main .cent_right .cent_top .nav-cent ul .nav-but button {
+	color: #ffffff;
+}
+
+.main .cent_right .cent_top .nav-cent ul li a {
+	display: block;
+	font: 14px/38px "微软雅黑";
+	color: #707070;
+	padding: 0 26px;
+}
+
+.main .cent_right .cent_top .ul-list {
+	padding: 30px 0 0 40px;
+}
+
+.main .cent_right .cent_top .ul-list h2 {
+	font: bold 12px "宋体";
+	color: #5c5c5c;
+}
+
+.main .cent_right .cent_top .ul-list ul {
+	float: left;
+	font: 12px "宋体";
+	color: #626262;
+	padding: 16px 116px 0 0;
+}
+
+.main .cent_right .cent_top .ul-list ul li {
+	padding-bottom: 18px;
+}
+
+
+
+/* 图片展示 */
+.main .cent_right .centent {}
+
+.main .cent_right .centent .img-left {
+	width: 810px;
+	min-height: 400px;
+	text-align: center;
+}
+
+.main .cent_right .centent .img-left img {
+	width: 810px;
+}
+
+
+
+
+
+
+
+
+.main .cent_right .centent .nav-right {
+	width: 160px;
+	min-height: 1170px;
+	text-align: center;
+	background-color: #f6f6f6;
+	padding-top: 40px;
+}
+
+.main .cent_right .centent .nav-right ul {
+	position: relative;
+	width: 105px;
+	margin: 0 auto;
+}
+
+.main .cent_right .centent .nav-right ul .active span {
+	display: block;
+	position: absolute;
+	top: 25px;
+	left: 4px;
+	height: 150px;
+	border-left: 2px solid #dedede;
+}
+
+.main .cent_right .centent .nav-right ul li {
+	text-align: left;
+}
+
+.main .cent_right .centent .nav-right ul li a {
+	font: bold 14px/40px "宋体";
+	color: #626262;
+	padding-left: 16px;
+}
+
+.main .cent_right .centent .nav-right ul .active i {
+	background-color: #e75f09;
+}
+
+.main .cent_right .centent .nav-right ul .active a {
+	color: #e75f09;
+}
+
+.main .cent_right .centent .nav-right ul li i {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #efefef;
+	border-radius: 50%;
+}

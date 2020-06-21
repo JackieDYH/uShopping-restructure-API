@@ -1,0 +1,400 @@
+@charset "utf-8";
+
+/* 隐藏nav */
+.navbar .menu ul {
+	display: none;
+}
+
+.navbar .menu:hover ul {
+	display: block;
+}
+
+/* 导航 */
+.navbar {
+	border-bottom: 2px solid #ed6d12;
+}
+
+.navbar .inner {
+	position: relative;
+}
+
+/* 面包蟹导航 */
+.bread_header {
+	padding: 14px 0 10px 0;
+}
+
+.bread_header .breadCrumb ul li {
+	float: left;
+}
+
+.bread_header .breadCrumb ul li a {
+	font: 12px/33px "宋体";
+	color: #696969;
+}
+
+.bread_header .breadCrumb ul li span {
+	display: inline-block;
+	font: 12px/22px "宋体";
+	color: #e15c00;
+	text-align: center;
+	width: 147px;
+	height: 22px;
+	border: 1px dashed #fb803a;
+	margin-top: 4px;
+}
+
+.bread_header .breadCrumb ul li span i {
+	display: inline-block;
+	font: bold 18px "宋体";
+	transform: rotate(45deg);
+	vertical-align: bottom;
+}
+
+.bread_header .breadCrumb ul li+li::before {
+	content: ">";
+	padding: 0 6px 0 8px;
+	color: #696969;
+}
+
+/* 商品分类 */
+.bread_header .screen {
+	background-color: #ffffff;
+}
+
+.bread_header .screen .scr-01 {
+	width: calc(100% - 160px);
+	margin: 0 auto;
+	border-left: 160px solid #fcf7f4;
+
+	border-top: 1px solid #e5e4e2;
+}
+
+.bread_header .screen .scr-01 .brand {
+	font: 12px/40px "宋体";
+	width: 160px;
+	text-align: center;
+	background-color: #fcf7f4;
+	margin-left: -160px;
+}
+
+.bread_header .screen .scr-01 .brand label>i {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #f4ba94;
+	border-right: 2px solid #f4ba94;
+	transform: rotate(45deg);
+	margin-right: 10px;
+}
+
+.bread_header .screen .scr-01 .brandList {
+	width: calc(100% - 160px);
+}
+
+.bread_header .screen .scr-01 .brandList a {
+	display: inline-block;
+	font: 12px/40px "宋体";
+	margin-left: 20px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.bread_header .screen .scr-01 .brandList .active {
+	color: orange;
+}
+
+.bread_header .screen .scr-01 {
+	position: relative;
+}
+
+.bread_header .screen span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font: 12px/40px "宋体";
+	color: #b79886;
+}
+
+.bread_header .screen span>i {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #f4ba94;
+	border-right: 2px solid #f4ba94;
+	transform: rotate(135deg);
+	margin: 0 7px 0 2px;
+	vertical-align: text-top;
+}
+
+
+/* 主体内容 */
+/* 左侧 */
+.main .cent_left {
+	width: 208px;
+	border-top: 2px solid #ff8c4e;
+	border-right: 1px solid #e3e3e3;
+	border-left: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+	margin-bottom: 20px;
+}
+
+.main .cent_left h2 {
+	font: bold 16px/45px "微软雅黑";
+	color: #eb6116;
+	padding-left: 18px;
+}
+
+.main .cent_left ul {
+	text-align: center;
+}
+
+
+.main .cent_left ul li {
+	padding: 5px 0;
+}
+
+.main .cent_left ul li>a>img{
+	width: 176px;
+	height: 176px;
+}
+
+.main .cent_left ul li a div {
+	text-align: left;
+	padding: 10px 0 0 18px;
+}
+
+.main .cent_left ul li a p {
+	font: 12px/20px "宋体";
+	color: #636363;
+}
+
+.main .cent_left ul li a span {
+	font: bold 14px/22px "Arial";
+	color: #ef6f24;
+}
+
+
+
+
+
+
+
+/* 右侧 */
+.main .cent_right {
+	width: 970px;
+}
+
+.main .cent_right .cent_top {
+	height: 44px;
+	background-color: #fcf7f4;
+}
+
+.main .cent_right .cent_top ul {
+	padding: 9px 0 0 12px;
+}
+
+.main .cent_right .cent_top ul li {
+	float: left;
+	width: 53px;
+	height: 24px;
+	background-color: #ffffff;
+	border: 1px solid #d8d8d8;
+	cursor: pointer;
+}
+
+/* .main .cent_right .cent_top ul li:hover a { */
+.main .cent_right .cent_top ul .active {
+	color: orange;
+}
+
+.main .cent_right .cent_top ul li:nth-child(2) {
+	border-right: 0;
+	border-left: 0;
+}
+
+.main .cent_right .cent_top ul li:nth-child(3) {
+	border-right: 0;
+}
+
+.main .cent_right .cent_top>ul>li {
+	display: block;
+	font: 12px/24px "宋体";
+	text-align: center;
+	color: #606060;
+}
+
+.main .cent_right .cent_top>ul>li span {
+	font-size: 12px;
+	color: #e5e5e5;
+}
+
+.main .cent_right .cent_top .txt {
+	font: bold 12px "Arial";
+	padding: 14px 12px 0 0;
+}
+
+.main .cent_right .cent_top .txt i {
+	font: 12px "Arial";
+	padding: 12px 6px 0 0;
+}
+
+.main .cent_right .cent_top .txt i b {
+	color: #d76c1e;
+}
+
+.main .cent_right .cent_top .txt>.iconfont {
+	font-size: 14px;
+	color: #bbb6b3;
+	cursor: pointer;
+}
+
+.main .cent_right .cent_top .txt>span {
+	font: 12px "宋体";
+	color: #716c69;
+}
+
+.main .cent_right .cent_top .txt .text {
+	padding-right: 20px;
+}
+
+
+/* 内容 */
+.main .cent_right .centent ul {
+	text-align: center;
+	padding: 10px;
+}
+
+.main .cent_right .centent>ul>li {
+	float: left;
+	width: 230px;
+	height: 390px;
+	border: 3px solid transparent;
+}
+
+.main .cent_right .centent ul li img {
+	padding: 20px 0 20px 0;
+	width: 198px;
+	height: 150px;
+}
+
+.main .cent_right .centent ul li a>div {
+	text-align: left;
+	padding: 25px 0 0 22px;
+}
+
+.main .cent_right .centent ul li a strong {
+	font: bold 20px/33px "Arial";
+	color: #da620c;
+}
+
+.main .cent_right .centent ul li a .txts>p {
+	font: 12px/21px "宋体";
+	color: #686868;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.main .cent_right .centent ul li a .txts>.txt1 {
+	color: #e67026;
+}
+
+.main .cent_right .centent ul li a .txts>.txt2 {
+	font-weight: bold;
+	line-height: 37px;
+	color: #9b9b9b;
+}
+
+.main .cent_right .centent ul li a .txts>.txt2 i {
+	font: 13px "Arial";
+	color: #e34110;
+}
+
+.main .cent_right .centent ul li a .cart {
+	width: 190px;
+	padding-top: 5px;
+	text-align: center;
+}
+
+.main .cent_right .centent ul li a .cart>li {
+	float: left;
+	height: 28px;
+	font: 12px/28px "宋体";
+	padding: 0 13px;
+	border: 2px solid #d8d8d8;
+}
+
+.main .cent_right .centent ul li a .cart>li:nth-child(1) {
+	border-right: 0;
+}
+
+.main .cent_right .centent ul li a .cart>li span {
+	display: inline-block;
+	margin-left: -14px;
+	padding: 0 7px;
+	/* background-color: #f36d0e; */
+}
+
+.main .cent_right .centent ul>li:hover {
+	border: 3px solid #f36d0e;
+}
+
+.main .cent_right .centent ul>li:hover .cart li {
+	border: 2px solid #f36d0e;
+}
+
+.main .cent_right .centent ul>li:hover .cart>li span {
+	color: #fff;
+	background-color: #f36d0e;
+}
+
+
+
+
+
+/* 分页 */
+.main .cent_right .paging {
+	padding: 45px 0 80px 255px;
+}
+
+.main .cent_right .paging ul {
+	text-align: center;
+}
+
+.main .cent_right .paging ul li {
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin: 0 9px;
+	border: 1px solid #e4e4e4;
+}
+
+.main .cent_right .paging ul .page {
+	width: 76px;
+}
+
+.main .cent_right .paging ul li a {
+	display: block;
+	font: 16px/28px "Arial";
+}
+
+.main .cent_right .paging ul .page a {
+	font: 14px/28px "宋体";
+}
+
+.main .cent_right .paging ul .dian {
+	font-size: 20px;
+	font-weight: bold;
+	border: 0;
+	margin: 0;
+}
+
+.main .cent_right .paging ul>li:hover {
+	border-color: #f76915;
+}
+
+.main .cent_right .paging ul>li:hover a {
+	color: #f76915;
+}

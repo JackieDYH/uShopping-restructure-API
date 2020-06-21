@@ -1,0 +1,77 @@
+# 1页面头部 -- 地理位置api
+#省份
+get http://127.0.0.1:3000/api/provincesList
+
+###
+#市
+get http://127.0.0.1:3000/api/CityList?pro_id=110000
+
+###
+#区
+get http://127.0.0.1:3000/api/areasList?city_id=110100
+
+# 2页面头部热门搜索列表
+###
+get http://127.0.0.1:3000/api/hotSearchList
+
+###录入搜索
+post http://127.0.0.1:3000/api/enterSearch
+Content-Type: application/x-www-form-urlencoded
+
+searchText=小米5
+
+####
+#  搜索结果 - 商品列表
+GET http://127.0.0.1:3000/api/searchGoodsList?searchText=包&page=1&everyNum=16&how=eval
+
+#### thired_id
+GET http://127.0.0.1:3000/api/searchGoodsList?thired_id=312&page=1&everyNum=16&how=sell
+
+###验证码接口
+get http://127.0.0.1:3000/users/getCode
+
+###用户注册接口
+post http://127.0.0.1:3000/users/register
+Content-Type: application/x-www-form-urlencoded
+
+userCode=zy6v&username=dyh&password=202cb962ac59075b964b07152d234b70
+
+###用户登录接口
+post http://127.0.0.1:3000/users/login
+Content-Type: application/x-www-form-urlencoded
+
+userCode=zy6v&username=dyh&password=202cb962ac59075b964b07152d234b70
+
+### 购物车页面 - 查询购物车列表
+// cookie不需要你自己来写, 调用一下登录接口, 以后的请求中都会携带cookie
+GET http://127.0.0.1:3000/users/shopCarList
+
+###首页 轮播图接口
+GET  http://127.0.0.1:3000/api/bannerList
+
+###首页 商品全部一级分类
+GET  http://127.0.0.1:3000/api/firstCategory
+
+### 首页 - 限时活动接口
+GET http://127.0.0.1:3000/api/flashList
+
+### 首页 - 人气好货
+GET http://127.0.0.1:3000/api/homeGoodEvalList
+
+### 首页 - 排行榜
+GET http://127.0.0.1:3000/api/rankingList
+
+### 首页 - 各大模块
+GET http://127.0.0.1:3000/api/homeList
+
+### 首页 - 猜你喜欢
+GET http://127.0.0.1:3000/api/guessLoveList
+
+### 详情页 - 商品详情
+GET http://127.0.0.1:3000/api/goodsDetail?goodsid=1302235016010100001
+
+### 橱窗
+GET http://127.0.0.1:3000/api/winLocation
+
+### 一级分类
+GET http://127.0.0.1:3000/api/categoryFirst

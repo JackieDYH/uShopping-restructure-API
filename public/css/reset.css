@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+body,h1,h2,h3,h4,h5,h6,p,th,td,ol,ul,dl,dd,form,fieldset,legend,input,button,textarea,select {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, "微软雅黑", "宋体", Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;/*去掉标题自带加粗*/
+}
+
+strong,b {
+	font-weight: normal;
+}
+
+i,em {
+	font-style: normal;/*斜体扶正*/
+}
+
+ul,ol {
+	list-style: none;/*去掉默认列表符*/
+}
+
+/*多行文本输入框*/
+textarea {
+	outline:none;
+	resize: none;/* 禁止用户重置元素大小 */
+	overflow: auto;/*在浏览器默认状态下没有滚动条*/
+	font-family: inherit;
+}
+
+img {
+	vertical-align: middle;/*图片对齐方式*/
+	border: none;/*去掉ie浏览器图片外面的边框*/
+}
+
+a {
+	outline:none;/*去掉描边*/
+	text-decoration: none;/*去掉自带下划线*/
+	color: #333;
+}
+
+/* a:hover {
+	color: #ff4800;
+	text-decoration: underline;
+} */
+
+table {
+	border-collapse: collapse;/*去掉表格自带间隙*/
+	border-spacing: 0;
+}
+
+th {
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+}
+
+td {
+	text-align: left;
+	vertical-align: top;
+}
+
+input,button {
+	border: none;/* 去除选中轮廓效果 */
+	outline: none;
+	font-family: inherit;
+	background-color:transparent;/*背景色透明*/
+}
+
+/* public */
+/* 清除浮动影响 */
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.clearfix{
+	*zoom: 1;
+}
+
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}

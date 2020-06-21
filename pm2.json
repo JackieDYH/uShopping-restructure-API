@@ -1,0 +1,14 @@
+{
+  "apps" : [{
+    "name"        : "0210u",
+    "script"      : "./bin/www",
+    "args"        : ["-p", "3000"], 
+    "node_args"   : "--harmony",    
+    "merge_logs"  : true,        
+    "cwd":"./",
+    "env": {                  
+      "NODE_ENV": "production",
+      "PORT": 3000
+    }
+  }]
+}

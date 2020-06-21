@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小U商城-登录</title>
+		<link rel="icon" href="./images/titleIcon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="./css/public-Registerlogin.css" />
+		<link rel="stylesheet" type="text/css" href="./css/login.css" />
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="header inner">
+			<a href="./index.html"><img src="images/logo.jpg"></a>
+			<h1>欢迎登录</h1>
+		</div>
+		<!-- 内容 -->
+		<div class="main">
+			<div class="img-banner">
+				<ul>
+					<li><a href="javascript:;"><img src="./images/banner-login.jpg" ></a></li>
+					<li><a href="javascript:;"><img src="./images/banner-login.jpg" ></a></li>
+				</ul>
+			</div>
+			<div class="inner">
+				<div class="box">
+					<i class="xian"></i>
+					<h2>登录</h2>
+					<form autocomplete="off">
+						<div class="mail">
+							<div class="em">
+								<i></i><input type="text" name="userMail" id="userMail" placeholder="手机号/会员名/邮箱" required autofocus />
+							</div>
+							<span>请输入邮箱/用户名</span>
+						</div>
+						<div class="pwd">
+							<div class="em">
+								<i class="pw"></i><input type="password" name="userPwd" id = "userPwd" placeholder="请输入密码" required />
+							</div>
+							<span>请输入密码/密码格式为6-20位字母数组组合</span>
+						</div>
+						<div class="yzm">
+							<div class="em">
+								<input class="yzm" type="text" name="yzm" id="yzm" placeholder="请输入验证码" required /><img id="code" src="/users/getCode">
+								<!-- <img src="/users/getCode" onclick="this.src=this.src+'?'"> -->
+							</div>
+							<span>请输入验证码</span>
+						</div>
+						<input type="submit"value="登录" id="sub"/>
+						<div class="log clearfix">
+							<p class="aut fl">
+								<label>
+									<input type="checkbox" checked="" name="dl" /><b>自动登录</b>
+								</label>
+							</p>
+							<p class="aut1 fr"><a href="javascript:;">忘记密码？</a></p>
+						</div>
+						
+						<div class="bott clearfix">
+							<ul class="fl">
+								<li>
+									<em class="qq"></em>
+									QQ
+								</li>
+								<li>
+									<em class="wb"></em>
+									微博
+								</li>
+								<li>
+									<em class="wx"></em>
+									微信
+								</li>
+							</ul>
+							<a class="fr" href="./register.html">立即注册</a>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="footer inner">
+			<p>Copyright&copy;2010-2016小U商城 版权所有 保留一切权力</p>
+			<p><a href="javascript:;">京ICP备10218183号</a><a href="javascript:;">京ICP证161188号</a><a href="javascript:;">京公安网安备110110802020593号</a>出版物经营许可证新出发京批字第直130052号</p>
+		</div>
+		<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+		<script src="./utils/request.js"></script>
+		<script src="./utils/md5.js"></script>
+		<script src="./js/login.js"></script>
+	</body>
+</html>

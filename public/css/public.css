@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* 版心 */
+.inner{
+	width: 1190px;
+	margin: 0 auto;
+}
+
+/* 顶部区域 */
+.topbar{
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #efefef;
+}
+
+.topbar .inner ul li{
+	float: left;
+	margin: 0 12px 0 10px;
+}
+.topbar .inner ul li a{
+	font: 12px/35px "微软雅黑";
+	color: #5d5d5d;
+}
+
+/* 三角 */
+.topbar .down{
+	position: relative;
+	top: 6px;
+	margin-left: 5px;
+	
+}
+.topbar .down::before,
+.topbar .down::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 5px solid;
+	border-color: #f5f5f5 transparent;
+	border-bottom: 0;
+}
+.topbar .down::before{
+	border-color: #e0e0e0 transparent;
+	top: 2px;
+}
+
+.topbar .arricon{
+	display: inline-block;
+	width: 13px;
+	height: 18px;
+	padding-left: 6px;
+	background: url(../images/icontop.png) no-repeat 0 0;
+	vertical-align: middle;
+}
+
+.topbar .arr{
+	position: relative;
+	top: 12px;
+	width: 0;
+	height: 0;
+	border: 6px solid;
+	border-bottom: 0;
+	border-color: #b4b4b4 transparent;
+	margin-left: 4px;
+}
+
+.topbar .carticon{
+	display: inline-block;
+	width: 13px;
+	height: 12px;
+	padding-right: 11px;
+	background: url(../images/icontop.png) no-repeat 0 -21px;
+	vertical-align: middle;
+}
+
+.topbar .inner .cole56 a{
+	color: #e5671b;
+}
+
+/* 头部 */
+.navheader .logo{
+	padding: 35px 0 34px;
+}
+.navheader form{
+	margin: 30px 0 0 155px;
+}
+.navheader .search input[type=text]{
+	float: left;
+	width: 390px;
+	height: 36px;
+	padding-left: 28px;
+	background: url(../images/icontop.png) no-repeat 8px -46px;
+	border: 2px solid #f56911;
+	border-right: 0;
+	font: 12px/36px "微软雅黑";
+	color: #9c9c9c;
+} 
+.navheader .search input[type=button]{
+	float: left;
+	height: 40px;
+	background-color: #f26b11;
+	padding: 0 42px;
+	font: 18px/40px "微软雅黑";
+	color: #fff;
+	vertical-align: top;
+}
+
+.navheader .keywordnew a:nth-child(-n+3){
+	color: #f36b00;
+}
+.navheader .keywordnew{
+	margin-left: -9px;
+	padding-top: 8px;
+}
+.navheader .keywordnew a{
+	float: left;
+	padding: 0 11px 0 9px;
+	border-right: 1px solid #989898;
+	font: 12px/14px "微软雅黑";
+	color: #9f9f9f;
+}
+
+.navheader .keywordnew a:hover{
+	color: orange;
+}
+
+.navheader .keywordnew .last{
+	border: none;
+}
+
+/* 导航 */
+.navbar{
+	position: relative;
+}
+.navbar .menu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.navbar .menu h2{
+	height: 38px;
+	font: bold 14px/38px "微软雅黑";
+	color: #fff;
+	padding: 0 85px 0 9px;
+	background-color: #ef6a0f;
+}
+.navbar .menu h2 i{
+	display: inline-block;
+	width: 12px;
+	height: 10px;
+	padding-right: 7px;
+	background: url(../images/icontop.png) no-repeat 0 -34px;
+	vertical-align: middle;
+}
+.navbar .menu>ul{
+	/* background-color: #262221; */
+	background: rgba(0,0,0,.5);
+	padding-left: 8px;
+	height: 492px;
+}
+.navbar .menu>ul>li a{
+	font: 13px/32px "微软雅黑";
+	color: #fdfbff;
+}
+.navbar .menu>ul>li a:hover{
+	color: orange;
+}
+.navbar .menu>ul>li a+a::before{
+	content: "|";
+	padding: 0 7px 0 5px;
+	color: #6e6a69;
+}
+
+
+
+.navbar .nav{
+	padding-left: 23px;
+	margin-left: 210px;
+}
+.navbar .nav li{
+	float: left;
+	height: 38px;
+	padding-right: 29px;
+}
+.navbar .nav li a{
+	display: block;
+	font: 15px/38px "微软雅黑";
+	color: #303030;
+}
+.navbar .nav li a:hover{
+	color: orange;
+}
+
+
+
+
+
+
+/* footer底部区域 */
+.footer{
+	background-color: #333333;
+}
+.footer .friend{
+	width: 848px;
+	margin: 0 auto;
+}
+.footer .friend dl{
+	float: left;
+	padding: 32px 108px 30px 0;
+}
+.footer .friend dl:nth-child(5){
+	padding-right: 0;
+}
+
+.footer .friend dl dt{
+	font: 18px "微软雅黑";
+	color: #aaaaaa;
+	padding-bottom: 24px;
+}
+
+.footer .friend dl dd{
+	padding-bottom: 16px;
+}
+.footer .friend dl a{
+	font: 15px "微软雅黑";
+	color: #aaaaaa;
+}
+
+.footer .copy{
+	padding: 30px 0 16px 0;
+	border-top: 2px solid #3e3e3e;
+}
+
+.footer .copy p{
+	font: 14px "微软雅黑";
+	color: #606060;
+	text-align: center;
+	padding-bottom: 14px;
+}
+.footer .copy p a{
+	font: 14px "微软雅黑";
+	color: #606060;
+}
